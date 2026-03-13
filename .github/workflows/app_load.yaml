@@ -18,5 +18,9 @@ jobs:
         - 
           name: Display some text
           run: echo "Deploying to ${{ github.event.inputs.selectedEnvironment }}"
-        
+        - 
+          name: Command in Multiline
+          run: | 
+            node -v
+            npm -v
 
