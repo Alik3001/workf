@@ -1,0 +1,3 @@
+# имя - любое
+name: Workflow
+on: [push]
