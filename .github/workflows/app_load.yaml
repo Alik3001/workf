@@ -1,2 +1,22 @@
 name: Workflow
-on: [push]
+on:
+  push:
+#  workflow_dispatch:
+#    inputs:
+#      selectedEnvironment:
+#        description: 'Environment'
+#        required: true
+#        default: 'stage' 
+#        type: choice
+#        options:
+#        - stage
+#        - production
+jobs:
+  run-first-command: 
+      runs-on: ubuntu-latest
+      steps: 
+        - 
+          name: Display some text
+          run: echo "Deploying to ${{ github.event.inputs.selectedEnvironment }}"
+        
+
