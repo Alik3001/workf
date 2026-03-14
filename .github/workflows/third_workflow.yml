@@ -6,10 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - 
-        name: Display some text
-        run: node -v
-      - 
         name: Command in Multiline
         run: | 
-          node -v
-          npm -v
+          pwd
+          ls -a
