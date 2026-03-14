@@ -1,6 +1,5 @@
 name: Workflow
-on:
-  push:
+on: push
 #  workflow_dispatch:
 #    inputs:
 #      selectedEnvironment:
