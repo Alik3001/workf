@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый HTML для CI/CD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Тестовый файл для GitHub Actions</h1>
+        <p>Версия: 1.0.0</p>
+        <p>Последнее обновление: <span id="date"></span></p>
+        <div class="info">
+            <p>Этот файл создан для:</p>
+            <ul>
+                <li>Проверки работы пайплайнов</li>
+                <li>Тестирования CI/CD процессов</li>
+                <li>Отладки GitHub Actions</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
