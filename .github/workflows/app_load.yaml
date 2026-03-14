@@ -1,4 +1,4 @@
-name: Workflow
+name: First Workflow
 on: push
 #  workflow_dispatch:
 #    inputs:
