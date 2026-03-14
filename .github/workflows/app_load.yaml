@@ -23,7 +23,7 @@ jobs:
           node -v
           npm -v
   run-parallel-command:
-    runs-on: window-latets
+    runs-on: windows-latets
     steps:
       -
         name: Display Node Version on Window
