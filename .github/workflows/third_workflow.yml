@@ -6,8 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - 
-        name: Command in Multiline
-        run: | 
-          pwd
-          ls -a
-          ls
+        name: List Files and Copy Repo
+        run: ls -a
+      -
+        uses: actions/checkout@v4
+      -
+        name: List Files 
+        run: ls -a
