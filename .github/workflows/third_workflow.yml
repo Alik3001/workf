@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - 
-        name: List Files and Copy Repo
+        name: List Files
         run: ls -a
       -
         name: Copy Files
