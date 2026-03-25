@@ -9,13 +9,13 @@ jobs:
         name: List Files
         run: ls -a
       -
-        name: Copy Files
-        run: |
-          git init
-          git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          git fetch origin
-          git checkout main
-        #uses: actions/checkout@v4
+        #name: Copy Files
+        #run: |
+        #  git init
+        #  git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+        #  git fetch origin
+        #  git checkout main
+        uses: actions/checkout@v4
       -
         name: List Files 
         run: ls -a
